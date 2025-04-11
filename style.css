@@ -177,15 +177,7 @@
     justify-content: space-between;
 
 }
-/* .button-2 h2{
-    font-family: 'Mulish', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #262626;
-    
-} */
+
 .button-2 .price{
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
@@ -245,144 +237,7 @@
     flex-direction: column;
     
 }
-/* .right{
-    overflow-y: auto; 
-    height: 100vh;
-    display:none;
-    width: 70%;
-    flex-shrink: 0;
-    padding: 1.25rem 1.75rem;
-}
 
-.right::-webkit-scrollbar {
-    display: none;
-  }
-.slid-navbar{
-    display: flex;
-    justify-content: space-between;
-
-}
-.slid-navbar .slid-logo{
-    height: 32px ;
-    width:  32px;
-    background-color: #ffb42a;
-}
-
-.slid-mid-right{
-    display: flex;
-    justify-content: space-around;
-    gap:1rem;
-    padding-top: 20px;
-    width: 900px;
-    height: 36px;
-    
-}
-.slid-searchbar{
-    border: 1px solid gray;
-    align-items: center;
-    width: 824px;
-    display: flex;
-    height: 36px;
-    border-radius: 5px;}
-    
-   .search-input{
-    flex: 1;
-    border: none;
-    }
-.slid-mid-logo{
-    height: 36px ;
-    width: 48px;
-}
-.slid-cards{
-  width: 884px;
-  height: 832px;
-  
-}
-.slid-card-1{
-   
-    width: 884px;
-    height: 132px;
-    border: 0.1px solid rgba(128, 128, 128, 0.342);
-    border-radius: 12px;
-    padding-top:16px ;
-    padding-bottom:16px ;
-    padding-left: 24px;
-    padding-right: 24px;
-    
-}
-.slid-box{
-    width: 836px;
-    height:100px ;
-    display: flex;
-   
-}
-.slid-box .slid-heading{
-    font-weight: 700;
-    font-size: 14px;
-}
-.slid-box .slid-para{
-    font-size: 12px;
-    font-weight: 400;
-    color: rgba(108, 105, 105, 1);
-}
-.slid-box .slid-bottom{
-     display: flex;
-}
-.slid-box .slid-line{
-    
-    border: 1px;
-    width: 15px;
-    color: rgba(108, 105, 105, 1);
-   
-    
-}
-.slid-box .slid-bottom-1{
-    display: flex;
-    font-size:14px ;
-    font-weight: 600;
-}
-.slid-box .slid-bottom-2{
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 1.2%;
-}
-.slid-price{
-    width: 183px;
-  
-    height: 100px;
-
-}
-.Request{
-    width: 163px;
-    height: 31px;
-    color: white;
-    background-color: #262626;
-    border-radius: 8px;
-    border: 1px;
-    justify-items: center;
-    align-items: center;
-  
-}
-.wireframe{
-    font-weight: 600;
-    font-size: 12px;
-    color: rgba(108, 108, 108, 1);
-}
-.Avg{
-    font-weight: 600;
-    font-size: 12px;
-    color: rgba(108, 108, 108, 1);
-}
- .p{
-    font-weight: 700 ;
-    font-size: 18px ;
-}
-.slid-line2{
-    width: 6px;
-    height:80px;
-    background-color: #393939;
-
-} */
  .left1{
     box-shadow: 1px 0px 0.6rem rgb(128, 128, 0.646);
  }
@@ -458,8 +313,7 @@
     font-size: 1.25rem;
    
     white-space: nowrap; 
-    /* display: flex;         */
-    /* align-items: center;   */
+    
     gap: 4px;  
     
   }

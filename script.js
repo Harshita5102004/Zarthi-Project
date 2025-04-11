@@ -1,12 +1,12 @@
 import jsonData from './data.json' with {type: "json"};
 
-let section_2 = document.querySelector('.cards');
-let section_2_cards = document.querySelector('#section-2-part-2 .card-container');
+let part_1 = document.querySelector('.cards');
+let part_2 = document.querySelector('#section-2-part-2 .card-container');
 let mid_nav = document.querySelector('.mid-nav');
 let sec = document.querySelector('.section-2');
 
 let filtered_data= jsonData;
-let filtered_input = document.getElementById('search-input-box');
+let filtered_input = document.getElementById('Search-bar');
 
 
 let filtered_data_2 = jsonData;
@@ -37,7 +37,7 @@ const display_service_data = (filtered_data) =>
             </div>`).join('');
 
 
-section_2.innerHTML = str;
+part_1.innerHTML = str;
 
 }
 
@@ -50,8 +50,7 @@ let filter_data = () => {
     const service_input_text = filtered_input.value.toLowerCase();
    
     if (service_input_text === "") {
-        // agar input box empty hai , restore the original data
-        filtered_data = jsonData;
+       filtered_data = jsonData;
     } else {
         filtered_data = jsonData.filter((value) =>
             value.service_name.toLowerCase().includes(service_input_text)
@@ -87,8 +86,8 @@ Part_1_cards.forEach(function(elem){
            //  elem.style.border = `1px solid #ffb938`;
             mid_nav.style.flexDirection = 'column';
         
-            section_2_cards.style.flexDirection = 'column';
-            section_2.style.width='100%';
+            part_2.style.flexDirection = 'column';
+            part_1.style.width='100%';
           
             sec.style.display = 'flex';
            sec.style.flexDirection = 'row';
@@ -104,9 +103,9 @@ Part_1_cards.forEach(function(elem){
             div2.style.display = "block";
         } else {
             //elem.style.border = `1px solid #d4d4d4`;
-            section_2_cards.style.flexDirection = 'row';
+            part_2.style.flexDirection = 'row';
            
-            section_2.style.width = '100%';
+            part_1.style.width = '100%';
             document.querySelector('.mid-nav').style.flexDirection = 'row';
             Part_1_cards.forEach(function(card){
                 card.style.width = '32.5%';
@@ -118,7 +117,7 @@ Part_1_cards.forEach(function(elem){
 
 
 
-// let section_2 = document.getElementById('service-section'); // Ensure this exists in your HTML
+// let part_1 
 
 const display_service_data_2 = (filtered_data_2) => {
     console.log(filtered_data_2);
@@ -142,7 +141,7 @@ const display_service_data_2 = (filtered_data_2) => {
         </div>`
     ).join('');
 
-    section_2_cards.innerHTML = str2; // Corrected line
+    part_2.innerHTML = str2; // Corrected line
 };
 
 let filter_data_2 = () => {
@@ -161,42 +160,14 @@ let filter_data_2 = () => {
 };
 
 filtered_input_2.addEventListener("input", filter_data_2);
-
 console.log(filter_data_2); // Fixed function name
-
 display_service_data_2(jsonData);
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section_2_cards.innerHTML = str2;
+part_2.innerHTML = str2;
 let allCard = document.querySelectorAll('.card');
 
 // allCard.forEach(function (card) {
